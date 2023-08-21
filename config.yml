@@ -1,0 +1,23 @@
+log:
+  level: 0
+
+server:
+  addr: "0.0.0.0:8690"
+
+redis:
+  ip: "localhost"
+  port: 6379
+  flush: false
+
+client:
+  numqouteperminute: 20        # Number of client requests 20
+  qouteperminute: 1                   # The time range of the number of quote requests 1 minutes
+  clientblockminute: 1         # Minutes to Block  1 minute
+  volumeqoute: 1024            # volume of qoute 1024 KB
+  amountofdailyvolume: 30      # Days of volume 30 Days
+  amountofvolumeblocking: 10   # Days of locking 10 Days
+
+observability:
+  addr: "0.0.0.0:6831"
+  prometheus: false
+  jaeger: false

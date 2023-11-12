@@ -1,6 +1,6 @@
 module github.com/arvan/qoute
 
-go 1.21.0
+go 1.23
 
 require (
 	github.com/ansrivas/fiberprometheus/v2 v2.6.1

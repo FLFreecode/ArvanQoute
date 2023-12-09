@@ -13,11 +13,11 @@ FROM alpine
 
 WORKDIR /app
 
-COPY --from=builder /tmp/app/arvan-qoute .
+COPY --from=builder /tmp/app/qoute-service .
 COPY --from=builder /tmp/app/config.yml .
 
 EXPOSE 8690
 
-RUN chmod +x ./arvan-qoute
+RUN chmod +x ./qoute-service
 
 CMD ["./arvan-qoute"]
